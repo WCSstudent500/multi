@@ -1,0 +1,137 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Світліший фон */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #ffccbc, #ffab91); /* М'якший теплий градієнт */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 25px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #444;
+}
+
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    background: linear-gradient(135deg, #ffffff, #e3f2fd); /* Світлий градієнт */
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+section h2 {
+    color: #1976d2;
+    border-bottom: 2px solid #1976d2;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+img, video, audio {
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+img:hover, video:hover, audio:hover {
+    transform: scale(1.05);
+}
+
+p {
+    color: #444;
+}
+
+footer {
+    background: linear-gradient(135deg, #ffbfa3, #e5ff9c); /* М'якший градієнт футера */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #444;
+}
+
+.footer-info {
+    font-size: 0.9em;
+    color: #f0f0f0;
+    margin-top: 10px;
+    padding: 0 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Анімації */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+footer .footer-info {
+    font-size: 0.85em;
+    color: #ddd;
+    text-align: center;
+    margin-top: 10px;
+}
